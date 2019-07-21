@@ -13,7 +13,13 @@ mod tests {
 
     #[test]
     fn is_true_when_even() {
-        assert!();
+        assert!(is_even(4) == true);
+    }
+
+    #[test]
+    fn is_true_when_even2() {
+        let valEven = is_even(4);
+        assert_eq!(valEven, 4 % 2 == 0);
     }
 }
 
